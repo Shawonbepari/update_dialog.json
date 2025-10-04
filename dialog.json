@@ -1,0 +1,28 @@
+plugins {
+    id("com.android.application")
+}
+
+android {
+    namespace = "com.shawonbp.updatedialog" // নতুন AGP 8+ required
+    compileSdk = 33
+
+    defaultConfig {
+        applicationId = "com.shawonbp.updatedialog"
+        minSdk = 21
+        targetSdk = 33
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        getByName("release") {
+            isMinifyEnabled = false
+        }
+    }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0") // Material3
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
+}
