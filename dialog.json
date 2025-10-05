@@ -5,6 +5,6 @@
   "button_text_later": "Remind me later",
   "url": "https://t.me/modapphub1",
   "force_update": false,
-  "show_dont_show_checkbox": true,
+  "show_dont_show_checkbox": false,
   "dont_show_pref_key": "dont_show_update_dialog"
 }
